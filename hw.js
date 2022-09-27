@@ -25,15 +25,13 @@ and replaces it with the string "even index" */
 let arr = ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 
 function replaceEvens(arr){
-    for (i = 0; i < arr.length; i++){
-        if(i% 2 === 0){
-            arr[i] = 'even index'
-
+    for (i = 0; i < arr.length; i ++){
+        if(i% 2 == 0){
+            arr.splice(i, 1, 'even index')
         }
     }
     return arr
-}
-
+    }
 console.log(replaceEvens(arr))
 
 //Expected output
